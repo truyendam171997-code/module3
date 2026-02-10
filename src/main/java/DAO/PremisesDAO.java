@@ -87,7 +87,7 @@ public class PremisesDAO {
         }
     }
 
-    // 4. Kiểm tra mã mặt bằng đã tồn tại (Server-side validation)
+    // kiểm tra
     public boolean isCodeExists(String code) {
         try (Connection conn = Database.connection();
              PreparedStatement ps = conn.prepareStatement(CHECK_CODE_EXISTS)) {

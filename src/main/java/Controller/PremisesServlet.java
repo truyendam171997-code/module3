@@ -75,7 +75,7 @@ public class PremisesServlet extends HttpServlet {
         } else {
 
             request.setAttribute("errorMessage", errorMessage);
-            request.setAttribute("premises", premises); // Để giữ lại dữ liệu cũ người dùng đã nhập
+            request.setAttribute("premises", premises);
             request.getRequestDispatcher("/WEB-INF/View/create.jsp").forward(request, response);
         }
     }
